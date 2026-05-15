@@ -1,11 +1,22 @@
-# FastAPI Docker Project
+# FastAPI Dockerized Application
 
-## Run using Docker
-docker-compose up --build
+This project is a simple FastAPI application that has been containerized using Docker and can be run using docker-compose.
 
-## API Docs
-http://localhost:8000/docs
+---
 
 ## Features
-- Dockerized FastAPI app
-- Data persistence using volumes
+
+- GET `/` → Returns a hello message  
+- GET `/users` → Returns list of users from JSON file  
+- POST `/users` → Stores user data in JSON file  
+
+---
+
+## Docker Setup
+
+This application is fully dockerized and can be run using Docker Compose.
+
+### Run the Application
+
+```bash
+docker-compose up --build
