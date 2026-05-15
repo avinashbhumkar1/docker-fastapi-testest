@@ -3,8 +3,8 @@ import json
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-datafolder = os.path.join(BASE_DIR, "data")
-datasource = os.path.join(datafolder, "users.json")
+datafolder = "/app/data"
+datasource = "/app/data/users.json"
 
 def check_dataset_exists():
     if not os.path.exists(datafolder):
